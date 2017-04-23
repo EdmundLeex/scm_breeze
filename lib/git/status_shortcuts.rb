@@ -37,10 +37,10 @@ exit if @changes.size > ENV["gs_max_changes"].to_i
 # Colors
 @c = {
   :rst => "\033[0m",
-  :del => "\033[0;31m",
-  :mod => "\033[0;32m",
-  :new => "\033[0;33m",
-  :ren => "\033[0;34m",
+  :del => "\033[0;37m",
+  :mod => "\033[0;33m",
+  :new => "\033[0;36m",
+  :ren => "\033[0;35m",
   :cpy => "\033[0;33m",
   :typ => "\033[0;35m",
   :unt => "\033[0;36m",
@@ -52,9 +52,9 @@ exit if @changes.size > ENV["gs_max_changes"].to_i
 
 # Following colors must be prepended with modifiers e.g. '\033[1;', '\033[0;'
 @group_c = {
-  :staged    => "33m",
+  :staged    => "32m",
   :unmerged  => "31m",
-  :unstaged  => "32m",
+  :unstaged  => "31m",
   :untracked => "36m"
 }
 
